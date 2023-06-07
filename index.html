@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Hoja de Vida</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 50px;
+            animation: fade-in 1s ease-in-out;
+            transform: scale(1);
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .section-content {
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            opacity: 0; /* Inicialmente oculto */
+            transform: translateY(-20px);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .section-content.fade-in {
+            opacity: 1; /* Aparición gradual */
+            transform: translateY(0);
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+        }
+
+        .experience-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+
+        .skills-list li {
+            display: inline-block;
+            background-color: #f5f5f5;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color: #777;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 22px;
+            }
+
+            .section-content {
+                font-size: 14px;
+            }
+
+            .experience-title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hoja de Vida</h1>
+
+        <div class="section-title">Información Personal</div>
+        <div class="section-content fade-in">
+            <p><strong>Nombre:</strong> Luis Hernando Martinez Poveda</p>
+            <p><strong>Fecha de nacimiento:</strong> 30 de Octubre de 1992</p>
+            <p><strong>Correo electrónico:</strong> lmartinezpov@unbosque.edu.co</p>
+            <p><strong>Teléfono:</strong> 3156220731</p>
+            <p><strong>Dirección:</strong> Mi casa</p>
+        </div>
+
+        <div class="section-title">Resumen</div>
+        <div class="section-content fade-in">
+            <p>Soy un apasionado profesional altamente dedicado y comprometido con una sólida trayectoria en el fascinante campo de la gastronomía, con especial énfasis en la distinguida cocina italiana. He adquirido conocimientos gastronómicos en Colombia y perfeccioné mi dominio en la prestigiosa escuela ALMA de Colorno, Italia, donde me especialicé en las delicadas artes gastronómicas de la cocina italiana auténtica.</p>
+            <p>Además de mi experiencia culinaria, poseo una sólida formación como barista certificado por la Specialty Coffee Association (SCA), donde he perfeccionado mis habilidades en la creación de exquisitos cafés y bebidas especializadas. Con más de dos años de experiencia en la industria, he tenido el privilegio de brindar experiencias de café excepcionales y de deleitar a los paladares más exigentes.</p>
+            <p>Como parte de mi compromiso constante con el crecimiento profesional, actualmente me encuentro cursando el sexto semestre de mi licenciatura en Ingeniería de Sistemas en la reconocida Universidad El Bosque.</p>
+        </div>
+
+        <div class="section-title">Educación</div>
+        <div class="section-content fade-in">
+            <ul>
+                <li><strong>Universidad Mariano Moreno</strong> - Título Técnico en cocina y pastelería, Año de graduación: 2014</li>
+                <li><strong>Universidad ALMA</strong> - Título Especialista en cocina italiana, Año de graduación: 2016</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Experiencia Laboral</div>
+        <div class="section-content fade-in">
+            <div class="experience-item">
+                <div class="experience-title">Restaurante Tramonti</div>
+                <p><strong>Cargo:</strong> Sous Chef</p>
+                <p><strong>Periodo:</strong> 2017 - 2018</p>
+                <p><strong>Descripción:</strong> Como Sous chef en un reconocido restaurante de cocina italiana, asumí un papel fundamental en la supervisión de las operaciones de cocina y contribuí al éxito general del establecimiento.</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-title">Azahar Café</div>
+                <p><strong>Cargo:</strong> Barista</p>
+                <p><strong>Periodo:</strong> 2018 - 2020</p>
+                <p><strong>Descripción:</strong> Como barista, asumí responsabilidades clave en la creación y preparación de bebidas de café excepcionales, brindando un servicio de calidad y deleitando a los clientes con experiencias únicas.</p>
+            </div>
+        </div>
+
+        <div class="section-title">Habilidades</div>
+        <div class="section-content fade-in">
+            <ul class="skills-list">
+                <li>Cocina</li>
+                <li>Barismo</li>
+                <li>Programación</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Animación de fade-in al cargar la página
+        document.addEventListener("DOMContentLoaded", function() {
+            var sectionContents = document.querySelectorAll('.section-content');
+            for (var i = 0; i < sectionContents.length; i++) {
+                sectionContents[i].classList.add('fade-in');
+            }
+        });
+    </script>
+</body>
+</html>
